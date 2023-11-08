@@ -45,26 +45,23 @@ export default function Pokemon() {
                 className="card-img-top"
                 alt="..."
               />
-              <div className="card-body">
+             
+            </div>
+            <div className="w-100">
+              <ul className="list-group list-group-flush p-4">
+                <li className="list-group-item">
                 <h3 className="card-title">
-                  {result.name ? (
+                {result.name ? (
                     result.name[0].toUpperCase() + result.name.substring(1)
                   ) : (
                     <p>Loading</p>
                   )}
                 </h3>
-                <h4 className="card-title">N° Pokedex #{result.id}</h4>
-              </div>
-            </div>
-            <div className="w-100">
-              <ul className="list-group list-group-flush p-4">
-                <li className="list-group-item">
-                  <h4>Estadísticas de Combate</h4>
                 </li>
                 {result.stats ? (
                   <>
                     <li className="list-group-item">
-                      PS: {result.stats[0].base_stat}
+                      HP: {result.stats[0].base_stat}
                     </li>
                     <li className="list-group-item">
                       Ataque: {result.stats[1].base_stat}
