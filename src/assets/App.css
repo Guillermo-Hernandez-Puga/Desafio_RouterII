@@ -1,0 +1,26 @@
+.app{
+
+  
+  background-size: cover;
+  background-clip: border-box;
+  height: 90vh;
+  position: relative;
+  z-index: 100;
+}
+
+.pikachu{
+  position:static;
+  z-index: 1;
+  top: 200;
+  left: 100;
+}
+
+.logoPokemon{
+  z-index: 2;
+  position: relative;
+}
+
+.menu{
+  font-family: 'Secular One', sans-serif;
+  height: 10vh;
+}
